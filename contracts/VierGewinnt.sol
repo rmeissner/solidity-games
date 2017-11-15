@@ -113,20 +113,20 @@ contract VierGewinnt {
     returns (uint8 stones)
   {
     stones = 0;
-    uint column = startColumn;
-    uint row = startRow;
+    int column = int(startColumn);
+    int row = int(startRow);
 
     do {
-      row = uint(int(row) + dx);
-      column = uint(int(column) + dy);
+      column = column + dx;
+      row = row + dy;
       if (row < 0 || column < 0 ||
-            row >= field[column].length || column >= field.length)
+            uint(column) >= field.length || uint(row) >= field[uint(column)].length)
         break;
 
       stones++;
       if (stones >= WIN_STONES)
         break;
-    } while(field[column][row] == expectedPlayer);
+    } while(field[uint(column)][uint(row)] == expectedPlayer);
   }
 
   function columns()
