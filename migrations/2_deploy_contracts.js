@@ -25,7 +25,7 @@ game.addStone(4, {from: "0xa5056c8efadb5d6a1a6eb0176615692b6e648313"})
 game.addStone(3, {from: "0x9bebe3b9e7a461e35775ec935336891edf856da2"})
 
 
-1st tx with player num:      88701
-1st tx with stone count:    106134
-1st tx with player addr:    106134
+with player num:     586105 (create) ->  88701 (p1) -> 58701 (p2) -> 60420 (p1) -> 30420 (p2) -> 61540 (p1) -> 31540 (p2) -> 46481 (p1)
+with stone count:    615162 (create) -> 106134 (p1) -> 76134 (p2) -> 61184 (p1) -> 31184 (p2) -> 61184 (p1) -> 31184 (p2) -> 52166 (p1)
+with player addr:    525112 (create) ->  88095 (p1) -> 58095 (p2) -> 74948 (p1) -> 44948 (p2) -> 76060 (p1) -> 46060 (p2) -> 61043 (p1)
 */
